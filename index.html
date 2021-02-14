@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Search Engine</title>
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body class="">
+<main class="container mx-auto">
+    <div class="logo mx-auto m-8">
+     <h1 class="text-white font-bold uppercases text-7xl text-center">LOGO</h1>
+     <p  class="text-white font-thin text-2xl text-center">slogan</p>
+    </div>
+    <button class="text-purple-500 rounded-md py-2 px-4 bg-white btn">Login</button>
+    <div class="flex justify-center items-center px-4 sm:px-6 lg:px-8">
+        <div class="relative"> <input id="searchInput" name="searchInput" type="text" class="h-14 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Search anything...">
+            <div class="absolute top-4 right-3" onclick="search()"> <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i> </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-10 mt-10 w-100">
+        <h2 class="font-medium text-3xl mb-5">Results:</h2>
+        <p class="" id="output"></p>
+    </div>
+</main>
+    
+
+
+<script src="js/searchV2.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/eb21a035c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
